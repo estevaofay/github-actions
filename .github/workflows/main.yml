@@ -41,14 +41,14 @@ jobs:
   deploy-staging:
     runs-on: ubuntu-latest
     environment: staging
-    needs: build, deploy-devel
+    needs: [build, deploy-devel]
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
   deploy-prod:
     runs-on: ubuntu-latest
     environment: prod
-    needs: build, deploy-devel, deploy-staging
+    needs: [build, deploy-devel, deploy-staging]
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
