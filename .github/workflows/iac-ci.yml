@@ -15,4 +15,7 @@ jobs:
         with:
           repository: smsilva/terraform-packager
           ref: 0.4.3
+      - name: Build Image
+        run: |
+          ls -al
 
