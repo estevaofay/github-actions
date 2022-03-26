@@ -1,4 +1,4 @@
-name: CI
+name: iac-ci
 
 on:
   workflow_dispatch:
