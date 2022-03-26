@@ -15,6 +15,10 @@ jobs:
         with:
           repository: smsilva/terraform-packager
           ref: 0.4.3
+      - name: Checkout IAC Code
+        uses: actions/checkout@v3.0.0
+        with:
+          repository: estevaofay/iac-aws-vpc
       - name: Build Image
         run: |
           ls -al
