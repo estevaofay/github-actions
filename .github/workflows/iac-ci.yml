@@ -24,6 +24,6 @@ jobs:
       - name: Build Image
         run: |
           cd ..
-          ls -al
+          ls
           ls $GITHUB_WORKSPACE
 
