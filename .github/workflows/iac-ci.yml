@@ -23,7 +23,6 @@ jobs:
           path: iac-aws-vpc
       - name: Build Image
         run: |
-          cd ..
           ls
           ls $GITHUB_WORKSPACE
 
