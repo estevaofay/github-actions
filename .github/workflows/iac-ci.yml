@@ -21,5 +21,6 @@ jobs:
           repository: estevaofay/iac-aws-vpc
       - name: Build Image
         run: |
+          cd ..
           ls -al
 
