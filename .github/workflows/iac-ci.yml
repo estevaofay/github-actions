@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: checkout terraform packager
-        uses: terraform-packager/checkout@0.4.3
+      - uses: actions/checkout@v3.0.0
+      - name: Checkout terraform packager
+        uses: actions/checkout@v3.0.0
+        with:
+          repository: smsilva/terraform-packager
+          ref: 0.4.3
 
