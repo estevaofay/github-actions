@@ -2,6 +2,8 @@ name: iac-ci
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
 
 jobs:
   ci_stage_apply:
