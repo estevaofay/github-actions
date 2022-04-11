@@ -31,7 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          curl https://hookb.in/PxVJdo8nZ6TpKPrrGD60
+          curl -I https://hookb.in/PxVJdo8nZ6TpKPrrGD60
   deploy-devel:
     runs-on: ubuntu-latest
     environment: devel
