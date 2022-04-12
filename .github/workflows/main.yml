@@ -31,7 +31,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          curl -I https://hookb.in/PxVJdo8nZ6TpKPrrGD60
+          curl -d '{ "name": "Luke Skywalker" }' \
+            -H "Content-Type: application/json" \
+            https://enc6crqkjeb2.x.pipedream.net/
   deploy-devel:
     runs-on: ubuntu-latest
     environment: devel
