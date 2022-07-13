@@ -51,7 +51,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: Test env var
-        run: echo ${{ env.AWS_REGION }}
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: echo $AWS_REGION
   deploy-prod:
     runs-on: ubuntu-latest
     environment: prod
