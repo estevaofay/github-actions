@@ -45,9 +45,9 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: echo $AWS_REGION
       - name: Test env var 2
-        run: echo${{ secrets.AWS_REGION }}
+        run: echo ${{ secrets.AWS_REGION }}
       - name: Test env var 3
-        run: echo${{ env.AWS_REGION }}
+        run: echo ${{ env.AWS_REGION }}
 #   deploy-staging:
 #     runs-on: ubuntu-latest
 #     environment: staging
