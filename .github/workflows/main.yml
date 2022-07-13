@@ -41,6 +41,8 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Test env var
+        run: echo ${{ env.AWS_REGION }}
   deploy-staging:
     runs-on: ubuntu-latest
     environment: staging
@@ -48,6 +50,8 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Test env var
+        run: echo ${{ env.AWS_REGION }}
   deploy-prod:
     runs-on: ubuntu-latest
     environment: prod
@@ -55,3 +59,5 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Test env var
+        run: echo ${{ env.AWS_REGION }}
